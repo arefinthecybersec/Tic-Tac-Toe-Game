@@ -90,17 +90,16 @@ const checkWinner = () => {
 newGameBtn.addEventListener("click", resetGame);
 resetBtn.addEventListener("click", resetGame);
 
-// Light/Dark JS  Code
-
+// Light/Dark JS Code Start
 var icon = document.getElementById("icon");
 
 icon.onclick = function() {
-    document.body.classList.toggle("theme");
+    document.body.classList.toggle("dark-mode");
 
-    if(document.body.classList.contains("theme")) {
-        icon.src = "sun.png";
+    if(document.body.classList.contains("dark-mode")) {
+        icon.src = "sun.png"; 
     }
     else {
         icon.src = "moon.png";
     }
-}
+};
